@@ -7,6 +7,7 @@
 ![Python](https://img.shields.io/badge/python-3.11+-blue?style=for-the-badge&logo=python&logoColor=white)
 ![LLM](https://img.shields.io/badge/LLM-Ollama-EF4135?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Kali_Linux-557CF2?style=for-the-badge&logo=kali-linux&logoColor=white)
+![4715f328-07ea-430d-8b11-c7a5ed872143(1)](https://github.com/user-attachments/assets/299074c5-901a-4adc-b95c-975c43fd960d)
 
 **ApexHunter** is an autonomous, agentic threat hunting playbook executor designed for senior SOC analysts and DFIR professionals. It bridges the gap between static detection and intelligent investigation by executing structured YAML playbooks against forensic artifacts (EVTX, CSV, JSON, Parquet) using local LLMs for correlation, triage, and automated discovery.
 
@@ -14,7 +15,7 @@
 
 ## 🚀 Overview
 
-In modern SOC environments, the bottleneck isn't data collection—it's the cognitive load of analysis. **ApexHunter** automates this by:
+In modern SOC environments, the bottleneck isn't data collection, it's the cognitive load of analysis. **ApexHunter** automates this by:
 - **Offline-First Design**: Processes sensitive telemetry 100% locally on your Kali instance. No data ever leaves your air-gapped environment.
 - **Agentic Reasoning**: Uses local Ollama models (Mistral, Llama3) to autonomously generate SQL queries and triage findings.
 - **Forensic Power**: Native ingestion of Windows Event Logs (`.evtx`), Sysmon telemetry, and large-scale CSV/JSON exports.
