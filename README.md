@@ -49,22 +49,44 @@ graph TD
 
 ---
 
-## 🛠️ Installation (Kali Linux)
+## 🛠️ Installation
 
-### 1. Install Ollama
-Ensure your local LLM service is running:
+### 1. Install Ollama (Local LLM Engine)
+ApexHunter requires a local [Ollama](https://ollama.com) instance to perform agentic reasoning.
+
+- **Linux (Kali/Ubuntu)**:
+  ```bash
+  curl -fsSL https://ollama.com/install.sh | sh
+  ```
+- **macOS**:
+  Download the installer from [ollama.com/download/mac](https://ollama.com/download/mac).
+- **Windows**:
+  Download and run the installer from [ollama.com/download/windows](https://ollama.com/download/windows).
+
+After installation, pull the recommended model:
 ```bash
-curl -fsSL https://ollama.com/install.sh | sh
-ollama serve &
 ollama pull mistral:latest
 ```
 
-### 2. Setup ApexHunter
+### 2. Install ApexHunter
+
+Ensure you have **Python 3.9+** installed.
+
+#### **Linux / macOS**
 ```bash
 git clone https://github.com/bogdanticu88/ApexHunter.git
 cd ApexHunter
 python3 -m venv .venv
 source .venv/bin/activate
+pip install .
+```
+
+#### **Windows (PowerShell)**
+```powershell
+git clone https://github.com/bogdanticu88/ApexHunter.git
+cd ApexHunter
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install .
 ```
 
